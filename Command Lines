@@ -1,0 +1,43 @@
+
+# COMMAND LINE SEQUENCES
+// Creating repository and uploading to Github
+	 -git init
+    -git add (file)
+    -git commit -m "description of edited code"
+    -git remote add origin (HTTPS or SSH)
+    -git push origin main
+// Getting a repository from Github then uploading again
+    -git clone (HTTPS or SSH)
+    -git push --mirror (HTTPS or SSH)
+  
+
+COMMANDS:
+  # git status: checks for untracked files and changes in repository
+  # git diff -staged: status but with more information
+  # git commit -a -m "description": automatically tracks all files in repository and skips staging (commits right away)
+  # rm -rf (name.git): removes given temporary.git repository
+  # git rm --staged (file): removes specific file from repository
+  # git mv (fromFile) (toFile)
+  # git log -p: commit history of who and description when they commit
+  # git log --stat: shows information on the changes to the file (insertion/deletion)
+  # git log -<n>: last n commits
+  # git log --since (date) : commits since date
+  # git log --author (name) : specified person's commits
+  # git commit --amend: amends the commit in case forgot something
+  # git reset HEAD (file): unstages a staged file
+  # git checkout -- (file): replaces local file with most recently commited (dangerous: leaves no trace of local file)
+  # git restore --staged (file): unstages a specified file
+  # git remote -v: shows HTTPS or SSH of all remote repositories
+  # git remote add (name) (HTTPS or SSH): adds remote repository
+  # git fetch (name): downloads remote repository
+  # git pull (name): fetches and merges with current file
+  # git push (name) (branch): uploads commit to remote repository
+  # git remote rename (prev name) (new name): changes nickname of remote
+  # git tag: shows all versions
+  # git tag (version number): creates a tag of specifed version number
+  # git tag -a (version number) -m "description": creates a tag of specifed version number and description of tag
+  # git push origin --tags: uploads all tags
+  # git tag -d (version): deletes specified tag
+  # git push origins :refs/tags/(version): removes specified tag from remote repository
+  # git config --global alias.(shortcut name) (function): creates shortcut of git (shortcut name)
+  
